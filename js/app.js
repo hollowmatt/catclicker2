@@ -3,6 +3,12 @@ var ViewModel = function() {
   this.name = ko.observable('Tabby');
   this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
   this.imgAttribution = ko.observable('https://www.flickr.com/photos/big');
+  this.nickNames = ko.observableArray([
+        { nick: 'Peach' },
+        { nick: 'Fuz' },
+        { nick: 'Chuckles' }
+    ]);
+
   this.level = ko.computed(function() {
     if (this.clickCount() >= 0 && this.clickCount() <=9) {
       return "Newborn";

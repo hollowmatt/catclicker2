@@ -16,6 +16,13 @@
             src="" alt="cute cat">
         <br>
         <button data-bind="click: resetCounter">Reset</button>
+        <br>
+        <h2>Nicknames:</h2>
+        <ul data-bind="foreach: nickNames">
+            <li>
+                <span data-bind="text: nick"> </span>
+            </li>
+        </ul>
     </div>
     <script src="js/lib/knockout-3.2.0.js"></script>
     <script src="js/app.js"></script>
