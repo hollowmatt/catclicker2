@@ -8,7 +8,7 @@ var initialCats = [
   },
   {
     clickCount: 0,
-    name: 'Choppy',
+    name: 'Nippy',
     imgSrc: 'img/1413379559_412a540d29_z.jpg',
     imgAttribution: 'https://www.flickr.com/photos/bigtallguy/43164568'
   },
@@ -41,6 +41,7 @@ var ViewModel = function() {
   initialCats.forEach(function(catItem) {
     self.catList.push(new Cat(catItem));
   });
+  console.log(this.catList());
 
   this.currentCat = ko.observable(this.catList()[0]);
 
@@ -50,6 +51,10 @@ var ViewModel = function() {
 
   this.resetCounter = function() {
     self.currentCat().clickCount(0);
+  };
+
+  this.setCurrentCat = function(cat) {
+    self.currentCat(cat);
   };
 };
 
