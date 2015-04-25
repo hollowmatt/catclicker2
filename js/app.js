@@ -8,7 +8,7 @@ var initialCats = [
   },
   {
     clickCount: 0,
-    name: 'Nippy',
+    name: 'Snippy',
     imgSrc: 'img/1413379559_412a540d29_z.jpg',
     imgAttribution: 'https://www.flickr.com/photos/bigtallguy/43164568'
   },
